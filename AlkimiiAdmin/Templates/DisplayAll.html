@@ -1,0 +1,41 @@
+﻿{% extends "AdminLayout.html" %}
+
+{% block main %}
+    
+    <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">List of users</div>
+    <table class="table">
+        <tr>
+            <td>
+                User Id
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Email
+            </td>
+            <td>
+                Password
+            </td>
+        </tr>
+        {% for i in rows %}
+        <tr>
+            <td>
+                {{ i.id }}
+            </td>
+            <td>
+                {{ i.name }}
+            </td>
+            <td>
+                {{ i.email }}
+            </td>
+            <td>
+                {{ i.password }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+    {% endblock %}

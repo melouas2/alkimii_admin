@@ -1,0 +1,34 @@
+﻿{% extends "HomeLayout.html" %}
+
+{% block main %}
+    <h2>User Login</h2>
+<div class="row">
+    <div class="col-xs-3">
+
+    </div>
+    <div class="col-xs-6">
+        <form class="form-horizontal" role="form" method="post">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="UserID">User ID:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="UserID">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="Password">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" value="/display">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-xs-3">
+
+    </div>
+</div>
+{% endblock %}

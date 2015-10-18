@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Alkimii Admin Page</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+        <div class="jumbotron">
+            <h1>Alkimii</h1>
+            <h2>Information Transformation</h2>
+        </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href='/display'>Home</a></li>
+                    <li role="presentation"><a href='/add'>Add User</a></li>
+                    <li role="presentation"><a href='/edit'>Edit User</a></li>
+                    <li role="presentation"><a href='/delete'>Delete User</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Logout</a></li>                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+    {% block main %}
+    {% endblock %}
+    </div>
+
+</body>
+</html>

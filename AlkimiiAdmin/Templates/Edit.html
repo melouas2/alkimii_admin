@@ -1,0 +1,45 @@
+﻿{% extends "AdminLayout.html" %}
+
+{% block main %}
+<div class="row">
+    <div class="col-xs-3">
+
+    </div>
+    <div class="col-xs-6">
+        <form class="form-horizontal" role="form" method="post">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="EditId">User ID:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="EditId" placeholder="UserId">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="EditName">Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="EditName" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="EditEmail">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="EditEmail" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="EditPassword">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="EditPassword" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" value="/display">Edit User</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-xs-3">
+
+    </div>
+ </div>
+    {% endblock %}
